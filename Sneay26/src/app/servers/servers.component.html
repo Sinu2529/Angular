@@ -1,0 +1,10 @@
+<p>servers works!</p>
+<label>Server name</label>
+<input [(ngModel)]="serverName">
+
+<button (click)="onCreationServer()">add</button>
+<p *ngIf="onserver; else onServer">Server creteds is {{serverName}}</p>
+<ng-template #onServer>
+    <p>no server create</p>
+</ng-template>
+<app-server *ngFor="let server of servers"></app-server>

@@ -1,33 +1,12 @@
 <div class="containter">
-  <div class='row'>
-    <div class="col-xs-12">
-        <label> Server Name</label>
-        <input type="text" [(ngModel)]="Servername">
-    </div>
-    <div class="col-xs-12">
-        <label>Server Content</label>
-        <input type="text" [(ngmodel)]="Servername" >
-    </div>
-</div>
-<br>
+<app-front></app-front>
 
-<div class="row">
-    <div class="col-xs-15">
-        <button (click)="onAddServer()">add server</button>
-        <button (click)="onAddServerContent()"> add server content</button>
-    </div>
-</div>
 <hr>
 <div class="row">
   <div class="col-xs-12">
-    <div
-    class="panel panel-default"
-    *ngFor="let server of server">
-    <div class="panel-heading">{{server.name}}</div>
-    <div class="panel-body">
-      <p><strong *ngIf="server.type==='server'" style="color: red">{{server.content}}</strong>
-        <em *ngIf="server.type==='blueprint'">{{server.content}}</em>
-      </p>
-    </div>
+    <app-server *ngFor let serverElement of serverElements
+    [element]="serverElements"></app-server>
   </div>
+    
+</div>
 </div>

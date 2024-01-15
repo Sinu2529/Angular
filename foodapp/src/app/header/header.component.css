@@ -1,0 +1,24 @@
+header{
+    padding: auto;
+    border-bottom: 1px solid;
+}
+a:hover{
+    background-color: bisque;
+}
+.container{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+a.logo{
+    font-weight: bold;
+
+}
+nav ul{
+    list-style-type: none;
+    margin: auto;
+}
+nav ul li{
+    padding: 1em;
+    display: inline-block;
+}

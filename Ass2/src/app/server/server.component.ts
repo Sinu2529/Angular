@@ -8,7 +8,17 @@ import { Component,Input } from '@angular/core';
 export class ServerComponent { 
   @Input() element: {type:string, name:string, content:string};
 
-  constructor() {}
+  constructor() {
+    this.element = {
+      type: 'text',
+      name: 'server',
+      content: 'This is a server.'
+    };
+  }
+
+  ngOnIt(){
+    
+  }
 
 
 }

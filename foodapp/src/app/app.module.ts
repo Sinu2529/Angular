@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { SearchComponent } from './search/search.component';
 import { CartpageComponent } from './cartpage/cartpage.component';
 import { FoodpageComponent } from './foodpage/foodpage.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FoodpageComponent } from './foodpage/foodpage.component';
     FoodComponent,
     SearchComponent,
     CartpageComponent,
-    FoodpageComponent
+    FoodpageComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,

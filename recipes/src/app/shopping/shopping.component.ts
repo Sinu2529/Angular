@@ -12,6 +12,9 @@ export class ShoppingComponent{
     new Ingredients('mango',7)
   ];
   
+  onIngredientAdded(ingredient: Ingredients){
+    this.ingredients.push(ingredient);
+  }
 
 
   constructor(){

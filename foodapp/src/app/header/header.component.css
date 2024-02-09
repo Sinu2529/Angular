@@ -2,6 +2,7 @@ header{
     padding: auto;
     border-bottom: 1px solid;
 }
+
 a:hover{
     background-color: bisque;
 }
@@ -9,9 +10,11 @@ a:hover{
     margin: auto;
     display: flex;
     justify-content: space-between;
+    background-color: #df6868;
 }
 a.logo{
     font-weight: bold;
+    display: inline-block;
 
 }
 nav ul{

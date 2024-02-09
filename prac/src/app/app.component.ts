@@ -10,11 +10,5 @@ import { ServerComponent } from './server/server.component';
 })
 export class AppComponent {
   title = 'prac';
-
-  constructor(private dialogRef: MatDialog){
-
-  }
-  openDialog(){
-    this.dialogRef.open(ServerComponent);
-  }
+ 
 }

@@ -5,11 +5,14 @@ import { Foods } from '../../shared/models/food';
   providedIn: 'root'
 })
 export class FoodService {
+  static getAll() {
+    throw new Error('Method not implemented.');
+  }
 
   constructor() { }
 
-  getFoodById(id:number){
-    return this.getAll().find(food=>food.id==id);
+  getFoodById(id:number): Foods{
+    return this.getAll().find(food=>food.id==id)!;
 
   }
 
@@ -21,13 +24,6 @@ export class FoodService {
         return this.getAll().filter(food => food.tags?.includes(tag));
     }
 }
-
-
-  getAllTag(){
-
-  }
-
-
 
   getAll(): Foods[]{
     return [
@@ -43,7 +39,7 @@ export class FoodService {
         tags:['fast','food','lunch']
       },
       {
-        id:1,
+        id:2,
         name:'combor',
         cooktime:10-20,
         price:10,
@@ -54,7 +50,7 @@ export class FoodService {
         tags:['fast','lunch','breakfast']
       },
       {
-        id:1,
+        id:3,
         name:'noodle',
         cooktime:10-20,
         price:10,
@@ -65,7 +61,7 @@ export class FoodService {
         tags:['fast','lunch','breakfast']
       },
       {
-        id:1,
+        id:4,
         name:'franky',
         cooktime:10-20,
         price:10,
@@ -76,7 +72,7 @@ export class FoodService {
         tags:['fast','lunch','breakfast']
       },
       {
-        id:1,
+        id:5,
         name:'non veg burger',
         cooktime:10-20,
         price:10,
@@ -87,7 +83,7 @@ export class FoodService {
         tags:['fast','lunch','breakfast']
       },
       {
-        id:1,
+        id:6,
         name:'spicy burger',
         cooktime:10-20,
         price:10,
@@ -98,7 +94,7 @@ export class FoodService {
         tags:['fast','lunch','breakfast']
       },
       {
-        id:1,
+        id:7,
         name:'sandwich',
         cooktime:10-20,
         price:10,
@@ -109,7 +105,7 @@ export class FoodService {
         tags:['fast','lunch','breakfast']
       },
       {
-        id:1,
+        id:8,
         name:'chicken balls',
         cooktime:10-20,
         price:10,

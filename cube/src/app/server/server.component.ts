@@ -16,10 +16,10 @@ export class ServerComponent {
   //   console.log('ngoninit called')
   // }
 
-  ngOnChanges(changes: SimpleChanges){
-    console.log('ngonchnages called')
-    console.log(changes)
-  }
+  // ngOnChanges(changes: SimpleChanges){
+  //   console.log('ngonchnages called')
+  //   console.log(changes)
+  // }
 
   // ngDoCheck(){
   //   console.log('ngDoChck called')

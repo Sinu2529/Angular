@@ -1,1 +1,22 @@
-<p>foodpage works!</p>
+<div class="container">
+    <img [src]="food.imageUrl" [alt]="food.name" height="400"><br>
+
+    <div class="details">
+        <div class="header"><br>
+            <span class="name">
+            {{food.name}}
+            </span><br>
+            <span class="favorite {{food.Favorite?'':'not'}}"> 
+                ♥
+            </span><br>
+            <span class="country">
+                {{food.origin}}
+            </span><br>
+            <span class="amount">
+                {{food.price}}
+            </span><br>
+            <button (click)="addToCart()"> Add To Cart</button>
+
+        </div>
+    </div>
+</div>

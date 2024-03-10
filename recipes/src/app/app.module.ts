@@ -10,6 +10,8 @@ import { DetailComponent } from './recipes/detail/detail.component';
 import { ItemComponent } from './recipes/list/item/item.component';
 import { ShoppingComponent } from './shopping/shopping.component';
 import { EditComponent } from './shopping/edit/edit.component'
+import { DropdownDirective } from './shared/dropdown.directive';
+import { ShoppingService } from './shopping/shopping.service';
 
 @NgModule({
   declarations: [
@@ -20,13 +22,14 @@ import { EditComponent } from './shopping/edit/edit.component'
     DetailComponent,
     ItemComponent,
     ShoppingComponent,
-    EditComponent
+    EditComponent,
+    DropdownDirective,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ShoppingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
